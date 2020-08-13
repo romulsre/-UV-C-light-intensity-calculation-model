@@ -60,7 +60,7 @@ z = 17
 inf = (L-l)/2
 sup = (L+l)/2
 
-# integral
+# time of irradiation
 time = 1*60 # time in [s]
 
 # create two list for put theory data
@@ -106,9 +106,9 @@ ax.plot(yfit, fit_func(yfit, popt[0], popt[1]), 'go-', label='Fit experimental')
 ax.legend()
 plt.show()
 
-# for 2d graph uncomment
+# for plot 2d graph uncomment
 '''
-# 2d figure for certain distance
+# 2d figure for dose at certain distance
 y = 7 # coordinate from bottom of the box
 Is = np.zeros((L-1,W-1))
 for x in range(0,L-1):
